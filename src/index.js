@@ -34,10 +34,10 @@ for(let r=0; r<9; r++){
 function SquarValueChck(matrix, row, col, value){
     let initRow=row-row%3;
     let InitCol=col-col%3;
-    let result=[];
+    //let result=[];
     for(let c=InitCol; c<InitCol+3;c++){
         for(let r=initRow; r<initRow+3; r++){
-            result.push(matrix[r][c]);
+            //result.push(matrix[r][c]);
             if(matrix[r][c]===value){
             return false;
         }
@@ -77,6 +77,8 @@ for(let i=0; i<ZeroAmount; i++){
         matrix[row][col]=0;
     }
 }
+
+
     return matrix;
 }
 
